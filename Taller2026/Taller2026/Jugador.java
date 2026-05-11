@@ -1,19 +1,18 @@
-public class Jugador {
-    private String dorsal;
-    private String posicion;
+import enums.Posicion;
+public class Jugador extends Persona {
+    private int dorsal;
+    private Posicion posicion;
     private float peso;
     private float altura;
 
     public Jugador () {
-        this.dorsal = "";
-        this.posicion = "";
+        this.dorsal = 0;
+        this.posicion = null;
         this.peso = 0;
         this.altura = 0;
     }
 
-    
-
-    public Jugador(String dorsal, String posicion, float peso, float altura) {
+    public Jugador(int dorsal, Posicion posicion, float peso, float altura) {
         this.dorsal = dorsal;
         this.posicion = posicion;
         this.peso = peso;
@@ -21,20 +20,19 @@ public class Jugador {
     }
 
 
-
-    public String getDorsal() {
+    public int getDorsal() {
         return dorsal;
     }
 
-    public void setDorsal(String dorsal) {
+    public void setDorsal(int dorsal) {
         this.dorsal = dorsal;
     }
 
-    public String getPosicion() {
+    public Posicion getPosicion() {
         return posicion;
     }
 
-    public void setPosicion(String posicion) {
+    public void setPosicion(Posicion posicion) {
         this.posicion = posicion;
     }
 
