@@ -1,9 +1,13 @@
+import java.util.ArrayList;
+
 public class Seleccion {
     private String nombreFederacion;
     private String camisetaPrincipal;
     private String camisetaSecundaria;
     private boolean cabezaGrupo;
     private int rankingFIFA;
+
+    private ArrayList<Jugador> jugadores;
     
     public Seleccion () {
         this.nombreFederacion = "";
@@ -20,6 +24,8 @@ public class Seleccion {
         this.camisetaSecundaria = camisetaSecundaria;
         this.cabezaGrupo = cabezaGrupo;
         this.rankingFIFA = rankingFIFA;
+
+        this.jugadores = new ArrayList<>();
     }
 
 
@@ -72,6 +78,7 @@ public class Seleccion {
         this.rankingFIFA = rankingFIFA;
     }
 
-    
-    
+    public void agregarJugador(Jugador jugador){
+        this.jugadores.add(jugador);
+    }
 }
