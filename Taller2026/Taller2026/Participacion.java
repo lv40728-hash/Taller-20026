@@ -26,16 +26,6 @@ public class Participacion {
         this.esLocal = esLocal;
     }
 
-    public TipoEvento cantidadGoles () {
-        return TipoEvento.GOL;
-    }
-    public TipoEvento cantidadTarjAmarillas () {
-        return TipoEvento.TARJETAAMARILLA;
-    }
-    public TipoEvento cantidadTarjRojas () {
-        return TipoEvento.TARJETAROJA ;
-    }
-
     public Seleccion getSeleccion() {
         return seleccion;
     }
@@ -54,14 +44,17 @@ public class Participacion {
 
     // Metodos
     public int cantidadGoles() {
-        return 0;
+        int contador = 0;
+        return contador;
     }
 
     public int cantidadTarjAmarillas() {
-        return 0;
+        int contador = 0;
+        return contador;
     }
 
     public int cantidadTarjRojas() {
-        return 0;
+        int contador = 0;
+        return contador;
     }
 }    
