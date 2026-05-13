@@ -1,6 +1,10 @@
+import enum.TipoEvento;
+
 public class Evento {
     private TipoEvento tipo;
     private int minuto;
+
+    public Evento() {}
    
     public Evento(TipoEvento tipo, int minuto) {
         this.tipo = tipo;
