@@ -1,5 +1,3 @@
-import enum.CategoriaArbitro;
-
 public class Arbitro extends Persona {
     private int aniosExperiencia;
 
