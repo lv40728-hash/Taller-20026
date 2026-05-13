@@ -9,6 +9,7 @@ public class Mundial {
         this.mascota = "";
         this.fechaDesde = "";
         this.fechaHasta = "";
+        this.sedes = new ArrayList<>();
     }
 
     public Mundial (int anio, String mascota, String fechaDesde, String fechaHasta) {
@@ -16,6 +17,7 @@ public class Mundial {
         this.mascota= mascota;
         this.fechaDesde= fechaDesde;
         this.fechaHasta=fechaHasta;
+        this.sedes = new ArrayList<>();
     }
     
     public int setAnio () {
@@ -45,6 +47,14 @@ public class Mundial {
     public void getFechaHasta (String fechaHasta) {
         this.fechaHasta = fechaHasta;
     }
-
+    public ArrayList<Sede> getSedes() {
+        return sede;
+    }
+    public void setSedes(ArrayList<Sede> sedes) {
+        this.sedes = sedes;
+    }
+    public void agregarSede(Sede s) {
+        this.sedes.add(s);
+    }
 
 }
