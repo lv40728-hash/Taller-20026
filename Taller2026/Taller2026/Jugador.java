@@ -10,13 +10,15 @@ public class Jugador extends Persona {
         this.posicion = null;
         this.peso = 0;
         this.altura = 0;
+        super();
     }
 
-    public Jugador(int dorsal, Posicion posicion, float peso, float altura) {
+    public Jugador(int dorsal, Posicion posicion, float peso, float altura, String nombre, int fecNacimiento) {
         this.dorsal = dorsal;
         this.posicion = posicion;
         this.peso = peso;
         this.altura = altura;
+        super(nombre, fecNacimiento);
     }
 
 
