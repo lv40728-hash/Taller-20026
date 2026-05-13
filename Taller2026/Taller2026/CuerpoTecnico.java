@@ -1,3 +1,5 @@
+import enum.Rol;
+
 public class CuerpoTecnico extends Persona {
     private Rol rol;
 
