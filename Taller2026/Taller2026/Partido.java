@@ -1,9 +1,9 @@
-import enums.TipoEvento;
+import enum.TipoEvento;
 import java.util.ArrayList;
 import java.util.Date;
 
 public class Partido {
-    private String  fecha;
+    private Date fecha;
     private Time horario;
     private int duracion;
     private int tiempoAdicional;
