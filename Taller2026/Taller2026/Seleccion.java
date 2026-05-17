@@ -6,7 +6,7 @@ public class Seleccion {
     private String camisetaSecundaria;
     private boolean cabezaGrupo;
     private int rankingFIFA;
-
+    private int puntos;
     private ArrayList<Jugador> jugadores;
     private ArrayList<DirectorTecnico> directores;
     private ArrayList<CuerpoTecnico> integrantesCuerpo;
@@ -20,10 +20,11 @@ public class Seleccion {
         this.jugadores = new ArrayList<>();
         this.directores = new ArrayList<>();
         this.integrantesCuerpo = new ArrayList<>();
+        this.puntos = puntos;
     }
     
     public Seleccion(String nombreFederacion, String camisetaPrincipal, String camisetaSecundaria, boolean cabezaGrupo,
-            int rankingFIFA) {
+            int rankingFIFA, int puntos) {
         this.nombreFederacion = nombreFederacion;
         this.camisetaPrincipal = camisetaPrincipal;
         this.camisetaSecundaria = camisetaSecundaria;
@@ -32,6 +33,7 @@ public class Seleccion {
         this.jugadores = new ArrayList<>();
         this.directores = new ArrayList<>();
         this.integrantesCuerpo<>();
+        this. puntos = puntos;
     }
 
 
@@ -83,6 +85,10 @@ public class Seleccion {
     public void setRankingFIFA(int rankingFIFA) {
         this.rankingFIFA = rankingFIFA;
     }
+
+    public int getPuntos() {
+    return puntos;
+    }    
 
     public void agregarJugador(Jugador jugador){
         this.jugadores.add(jugador);
