@@ -1,14 +1,20 @@
+import java.util.ArrayList;
+
 public class Sede {
     private String ciudad;
     private float alturaNivelMar;
     private String clima;
     private String zonaHoraria;
+    private Pais pais;
+    private Mundial mundial;
+    private ArrayList<Estadio> estadios;
 
     public Sede () {
         this.ciudad = "";
         this.alturaNivelMar = 0;
         this.clima = "";
         this.zonaHoraria = "";
+        this.estadios = new ArrayList<>();
     }
 
     public Sede (String ciudad,float alturaNivelMar,String clima,String zonaHoraria){
@@ -16,6 +22,9 @@ public class Sede {
         this.alturaNivelMar = alturaNivelMar;
         this.clima = clima;
         this.zonaHoraria = zonaHoraria;
+        this.pais = pais;
+        this.mundial = mundial;
+        this.estadios = new ArrayList<>();
     }
 
     public String getCiudad() {
@@ -50,5 +59,18 @@ public class Sede {
         this.zonaHoraria = zonaHoraria;
     }
 
+    public ArrayList<Estadio> getEstadios() {
+        return estadios;
+    }
+
+    public void setEstadios(ArrayList<Estadio> estadios) {
+         this.estadios = estadios;
+    }
+
+    public void agregarEstadio(Estadio e) {
+        this.estadios.add(e);
+    }
+    
+    
     
 }
