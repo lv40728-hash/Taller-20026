@@ -23,11 +23,11 @@ public class Main{
     System.out.println(" Infraestructura del Mundial Cargada ");
 
     System.out.println("\nPaís: " + mexico.getNombre() + " (" + mexico.getBandera() + ")");
-    System.out.println("Sede: " + cdmx.getCiudad() + " | Clima: " + cdmx.getClima() + " | Zona: " + cdmx.getZonaHoraria());
+    System.out.println("Sede: " + ciudaddemexico.getCiudad() + " | Clima: " + ciudaddemexico.getClima() + " | Zona: " + ciudaddemexico.getZonaHoraria());
     System.out.println(" -> Estadio: " + azteca.getNombre() + " (Capacidad: " + azteca.getCapacidad() + " espectadores)");
 
     System.out.println("\nPaís: " + usa.getNombre() + " (" + usa.getBandera() + ")");
-    System.out.println("Sede: " + newYork.getCiudad() + " | Clima: " + newYork.getClima() + " | Zona: " + newYork.getZonaHoraria());
+    System.out.println("Sede: " + nuevaYork.getCiudad() + " | Clima: " + nuevaYork.getClima() + " | Zona: " + nuevaYork.getZonaHoraria());
     System.out.println(" -> Estadio: " + metLife.getNombre() + " (Capacidad: " + metLife.getCapacidad() + " espectadores)");
 
   }
