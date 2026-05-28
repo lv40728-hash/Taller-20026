@@ -7,6 +7,9 @@ public class Seleccion {
     private boolean cabezaGrupo;
     private int rankingFIFA;
     private int puntos;
+    private Pais pais;
+    private Grupo grupo;
+    private ArrayList<Partido> partidos;
     private ArrayList<Jugador> jugadores;
     private ArrayList<DirectorTecnico> directores;
     private ArrayList<CuerpoTecnico> integrantesCuerpo;
@@ -17,6 +20,9 @@ public class Seleccion {
         this.camisetaSecundaria = "";
         this.cabezaGrupo = false;
         this.rankingFIFA = 0;
+        this.pais = pais;
+        this.grupo = grupo;
+        this.partidos = new ArrayList<>();
         this.jugadores = new ArrayList<>();
         this.directores = new ArrayList<>();
         this.integrantesCuerpo = new ArrayList<>();
@@ -30,6 +36,9 @@ public class Seleccion {
         this.camisetaSecundaria = camisetaSecundaria;
         this.cabezaGrupo = cabezaGrupo;
         this.rankingFIFA = rankingFIFA;
+        this.pais = pais;
+        this.grupo = grupo;
+        this.partidos = new ArrayList<>();
         this.jugadores = new ArrayList<>();
         this.directores = new ArrayList<>();
         this.integrantesCuerpo<>();
@@ -89,6 +98,34 @@ public class Seleccion {
     public int getPuntos() {
     return puntos;
     }    
+
+    public Pais getPais() {
+        return pais;
+    }
+
+    public void setPais(Pais pais) {
+        this.pais = pais;
+    }
+
+    public Grupo getGrupo() {
+        return grupo;
+    }
+
+    public void setGrupo(Grupo grupo) {
+        this.grupo = grupo;
+    }
+
+    public ArrayList<Partido> getPartidos() {
+        return partidos;
+    }
+
+    public void setPartidos(ArrayList<Partido> partidos) {
+        this.partidos = partidos;
+    }
+
+    public void agregarPartido(Partido p) {
+        this.partidos.add(p);
+    }
 
     public void agregarJugador(Jugador jugador){
         this.jugadores.add(jugador);
