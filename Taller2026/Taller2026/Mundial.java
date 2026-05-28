@@ -3,6 +3,7 @@ public class Mundial {
     private String mascota;
     private String fechaDesde;
     private String fechaHasta;
+     private ArrayList<sede> sedes;
 
     public Mundial () {
         this.anio = 0;
