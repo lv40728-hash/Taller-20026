@@ -1,23 +1,39 @@
+import enum.TipoEvento;
+import java.util.ArrayList;
+import java.util.Date;
+
 public class Partido {
-    private String  fecha;
-    private String horario;
+    private Date fecha;
+    private Time horario;
     private int duracion;
-    private int tiempoDuracion;
+    private int tiempoAdicional;
+    private ArrayList<Evento> eventos;
+    private ArrayList<Participaciones> participaciones;
+    private ArrayList<Arbitraje> arbitrajes;
+    private Estadio estadio;
 
     public Partido () {
-        this.fecha =  "";
+        this.fecha =  new Date();
         this.horario = "";
         this.duracion = 0;
-        this.tiempoDuracion = 0;
+        this.tiempoAdicional = 0;
+        this.eventos = new ArrayList<>();
+        this.participaciones = new ArrayList<>();
+        this.arbitrajes = new ArrayList<>();
+        this.estadio = null;
     }
 
-    public Partido (String fecha, String horario, int duracion, int tiempoDuracion) {
+    public Partido (String fecha, Time horario, int duracion, int tiempoAdicional) {
         this.fecha = fecha;
         this.horario = horario;
         this.duracion = duracion;
-        this.tiempoDuracion = tiempoDuracion;
+        this.tiempoAdicional = tiempoAdicional;
+        this.eventos = new ArrayList<>();
+        this.participaciones = new ArrayList();
+        this.arbitrajes = new ArrayList():
+        this.estadio = estadio;
     }
-
+    
     public String getFecha() {
         return fecha;
     }
@@ -26,11 +42,11 @@ public class Partido {
         this.fecha = fecha;
     }
 
-    public String getHorario() {
+    public Time getHorario() {
         return horario;
     }
 
-    public void setHorario(String horario) {
+    public void setHorario(Time horario) {
         this.horario = horario;
     }
 
@@ -42,14 +58,54 @@ public class Partido {
         this.duracion = duracion;
     }
 
-    public int getTiempoDuracion() {
-        return tiempoDuracion;
+    public int getTiempoAdicional() {
+        return tiempoAdicional;
     }
 
-    public void setTiempoDuracion(int tiempoDuracion) {
-        this.tiempoDuracion = tiempoDuracion;
+    public void setTiempoAdicional(int tiempoAdicional) {
+        this.tiempoAdicional = tiempoAdicional;
     } 
 
+    public ArrayList<Evento> getEventos() {
+        return eventos;
+    }
+
+    public void setEventos(ArrayList<Evento> eventos) {
+        this.eventos = eventos;
+    }
+
+    public ArrayList<Participacion> getParticipaciones() {
+        return participaciones;
+    }
+
+    public void setParticipaciones(ArrayList<Participacion> participaciones) {
+        this.participaciones = participaciones;
+    }
+
+    public void setArbitrajes(ArrayList<Arbitraje> arbitrajes) {
+        this.arbitrajes = arbitrajes;
+    }
     
+    public ArrayList<Arbitraje> getArbitrajes() {
+        return arbitrajes;
+    }
+
+    public void setEstadio(Estadio estadio){
+        this.estadio = estadio;
+    }
+
+    public void agregarEvento(Evento e) {
+        this.eventos.add(e);
+    }
+
+    public void agregarParticipacion(Participacion p) {
+        this.participaciones.add(p);
+    }
+
+    public void agregarArbitraje(Arbitraje a) {
+        this.arbitraje.add(a);
+    }
+
+
 
 }

@@ -1,19 +1,21 @@
-public class DirectorTecnico {
-    private int fechaNacimiento;
+public class DirectorTecnico extends Persona {
+    private int fechaNombramiento;
 
     public DirectorTecnico () {
-        this.fechaNacimiento = 0;
+        this.fechaNombramiento = 0;
+        super();
     }
-    public DirectorTecnico (int fechaNacimiento) {
-        this.fechaNacimiento = fechaNacimiento;
-    }
-
-    public int setFechaNacimiento () {
-        return fechaNacimiento;
+    public DirectorTecnico (int fechaNombramiento, String nombre, int fecNacimiento) {
+        this.fechaNombramiento = fechaNombramiento;
+        super(nombre, fecNacimiento);
     }
 
-    public void getFechaNacimiento (int fechaNacimiento) {
-        this.fechaNacimiento = fechaNacimiento;
+    public int setFechaNombramiento () {
+        return fechaNombramiento;
+    }
+
+    public void getFechombramiento (int fechaNombramiento) {
+        this.fechaNombramiento = fechaNombramiento;
     }
 
 
