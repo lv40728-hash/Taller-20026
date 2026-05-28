@@ -3,18 +3,24 @@ import java.util.ArrayList;
 public class Pais {
     private String nombre;
     private String bandera;
+    private Seleccion seleccion;
     private ArrayList<Sede> sedes;
+    private ArrayList<Arbitro> arbitros;
 
     public Pais () {
         this.nombre = "";
         this.bandera = ""; 
+        this.seleccion = null;
         this.sedes = new ArratList<>();
+        this.arbitros = new ArrayList<>();
     }
 
     public Pais ( String nombre, String bandera) {
         this.nombre = nombre;
         this.bandera = bandera;
+        this.seleccion = null;
         this.sedes = new ArrayList<>();
+        this.arbitros = new ArrayList<>();
     }
 
     public String setNombre ( ){
@@ -39,8 +45,28 @@ public class Pais {
         this.sedes = sedes;
     }
 
+    public Seleccion getSeleccion() {
+        return seleccion;
+    }
+
+    public void setSeleccion(Seleccion seleccion) {
+        this.seleccion = seleccion;
+    }
+
+    public ArrayList<Arbitro> getArbitros() {
+        return arbitros;
+    }
+
+    public void setArbitros(ArrayList<Arbitro> arbitros) {
+        this.arbitros = arbitros;
+    }
+
     public void agregarSede(Sede s) {
         this.sedes.add(s);
+    }
+
+    public void agregarArbitro(Arbitro a) {
+        this.arbitros.add(a);
     }
     
     
