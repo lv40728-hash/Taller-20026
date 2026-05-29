@@ -13,12 +13,12 @@ public class Mundial {
         this.sedes = new ArrayList<>();
     }
 
-    public Mundial (int anio, String mascota, String fechaDesde, String fechaHasta) {
+    public Mundial (int anio, String mascota, String fechaDesde, String fechaHasta, ArrayList<Sede> sedes) {
         this.anio = anio;
         this.mascota= mascota;
         this.fechaDesde= fechaDesde;
         this.fechaHasta=fechaHasta;
-        this.sedes = new ArrayList<>();
+        this.sedes = sedes;
     }
     
     public int setAnio () {

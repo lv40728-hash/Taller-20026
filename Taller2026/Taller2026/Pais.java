@@ -11,16 +11,16 @@ public class Pais {
         this.nombre = "";
         this.bandera = ""; 
         this.seleccion = null;
-        this.sedes = new ArratList<>();
+        this.sedes = new ArrayList<>();
         this.arbitros = new ArrayList<>();
     }
 
-    public Pais ( String nombre, String bandera) {
+    public Pais ( String nombre, String bandera, Seleccion seleccion, ArrayList<Sede> sedes, ArrayList<Arbitro> arbitros) {
         this.nombre = nombre;
         this.bandera = bandera;
-        this.seleccion = null;
-        this.sedes = new ArrayList<>();
-        this.arbitros = new ArrayList<>();
+        this.seleccion = seleccion;
+        this.sedes = sedes;
+        this.arbitros = arbitros;
     }
 
     public String setNombre ( ){

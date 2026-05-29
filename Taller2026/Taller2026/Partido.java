@@ -11,6 +11,7 @@ public class Partido {
     private ArrayList<Participaciones> participaciones;
     private ArrayList<Arbitraje> arbitrajes;
     private Estadio estadio;
+    private Fase fase;
 
     public Partido () {
         this.fecha =  new Date();
@@ -21,9 +22,11 @@ public class Partido {
         this.participaciones = new ArrayList<>();
         this.arbitrajes = new ArrayList<>();
         this.estadio = null;
+        this.fase = null;
     }
 
-    public Partido (String fecha, Time horario, int duracion, int tiempoAdicional) {
+
+    public Partido (String fecha, Time horario, int duracion, int tiempoAdicional, Estadio estadio, Fase fase, ArrayList<Evento> eventos, ArrayList<Participaciones> participaciones, ArrayList<Arbitraje> arbitrajes) {
         this.fecha = fecha;
         this.horario = horario;
         this.duracion = duracion;
@@ -32,6 +35,7 @@ public class Partido {
         this.participaciones = new ArrayList();
         this.arbitrajes = new ArrayList():
         this.estadio = estadio;
+        this.fase = fase;
     }
     
     public String getFecha() {
@@ -92,6 +96,18 @@ public class Partido {
 
     public void setEstadio(Estadio estadio){
         this.estadio = estadio;
+    }
+
+    public Estadio getEstadio() {
+        return estadio;
+    }
+
+    public void setFase(Fase fase) {
+        this.fase = fase;
+    }
+
+    public Fase getFase() {
+        return fase;
     }
 
     public void agregarEvento(Evento e) {

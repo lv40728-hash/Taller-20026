@@ -10,14 +10,14 @@ public class Grupo {
         this.identicacion = "";
         this.descripcion = "";
         this.selecciones = new ArrayList<>();
-        this.fase = fase;
+        this.fase = null;
     }
 
-    public Grupo (String identificacion, String descripcion) {
+    public Grupo (String identificacion, String descripcion, Fase fase, ArrayList<Seleccion> selecciones) {
         this.identicacion = identificacion;
         this.descripcion = descripcion;
         this.fase = fase;
-        this.selecciones = new ArrayList<>();
+        this.selecciones = selecciones;
     }
 
     public String getIdenticacion() {
