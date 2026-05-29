@@ -1,9 +1,11 @@
+import java.util.ArrayList;
+
 public class Mundial {
     private int anio;
     private String mascota;
     private String fechaDesde;
     private String fechaHasta;
-     private ArrayList<sede> sedes;
+    private ArrayList<Sede> sedes;
 
     public Mundial () {
         this.anio = 0;
@@ -49,7 +51,7 @@ public class Mundial {
         this.fechaHasta = fechaHasta;
     }
     public ArrayList<Sede> getSedes() {
-        return sede;
+        return sedes;
     }
     public void setSedes(ArrayList<Sede> sedes) {
         this.sedes = sedes;

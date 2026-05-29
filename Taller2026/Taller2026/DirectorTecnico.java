@@ -2,8 +2,8 @@ public class DirectorTecnico extends Persona {
     private int fechaNombramiento;
 
     public DirectorTecnico () {
-        this.fechaNombramiento = 0;
         super();
+        this.fechaNombramiento = 0;
     }
     public DirectorTecnico (int fechaNombramiento, String nombre, int fecNacimiento) {
         this.fechaNombramiento = fechaNombramiento;

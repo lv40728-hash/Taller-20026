@@ -1,24 +1,27 @@
+import enums.NombreFase;
+import java.util.ArrayList;
+
 public class Fase {
-    private String NombreFase;
+    private NombreFase NombreFase;
     private ArrayList<Partido> partidos;
     private ArrayList<grupo> grupos;
 
     public Fase () {
-        this.NombreFase = "";
+        this.NombreFase = NombreFase.DEFAULT;
         this.partidos = new ArrayList<>();
         this.grupos = new ArrayList<>();
     }
 
-    public Fase (String nombreFase, ArrayList<Partido> partidos, ArrayList<grupo> grupos) {
+    public Fase (NombreFase nombreFase, ArrayList<Partido> partidos, ArrayList<grupo> grupos) {
         this.NombreFase = nombreFase;
         this.partidos = partidos;
         this.grupos = grupos;
     }
 
-    public String setNombreFase () {
+    public NombreFase setNombreFase () {
         return NombreFase;
     }
-    public void getNombreFase (String nombreFase) {
+    public void getNombreFase (NombreFase nombreFase) {
         this.NombreFase = nombreFase;
     }
 
