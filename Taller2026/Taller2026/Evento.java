@@ -2,7 +2,7 @@ import enum TipoEvento;
 
 public class Evento{
     private TipoEvento TipoEvento;
-    private int minuto;
+    private int minuto; 
     private Jugador jugador;
 
     public Evento () {
