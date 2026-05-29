@@ -17,13 +17,13 @@ public class Sede {
         this.estadios = new ArrayList<>();
     }
 
-    public Sede (String ciudad,float alturaNivelMar,String clima,String zonaHoraria, Pais pais){
+    public Sede (String ciudad,float alturaNivelMar,String clima,String zonaHoraria, Pais pais, ArrayList<Estadio> estadios){ {
         this.ciudad = ciudad;
         this.alturaNivelMar = alturaNivelMar;
         this.clima = clima;
         this.zonaHoraria = zonaHoraria;
         this.pais = pais;
-        this.estadios = new ArrayList<>();
+        this.estadios = estadios;
     }
 
     public String getCiudad() {

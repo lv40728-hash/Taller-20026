@@ -7,15 +7,15 @@ public class Estadio {
     public Estadio () {
         this.nombre = "";
         this.capacidad = 0; 
-        this.sede = sede;
+        this.sede = null;
         this.partidos = new ArrayList<>();
     }
 
-    public Estadio (String nombre,int capacidad) {
+    public Estadio (String nombre,int capacidad,Sede sede, ArrayList<Partido> partidos){ {
         this.nombre = nombre;
         this.capacidad = capacidad;
         this.sede = sede;
-        this.partidos = new ArrayList<>();
+        this.partidos = partidos;
     }
 
     public String setNombre () {
